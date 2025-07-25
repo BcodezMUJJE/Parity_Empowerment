@@ -1,0 +1,78 @@
+/* Base Styles */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #e74c3c;
+  --text-light: #ecf0f1;
+  --impact-color: #e74c3c; /* Red color for "Impact" */
+}
+
+.homepage {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-light);
+}
+
+/* Hero Section */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-tagline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.impact-text {
+  color: var(--impact-color);
+  font-style: italic;
+}
+
+.hero-subheading {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 3rem;
+  }
+  
+  .hero-tagline {
+    font-size: 1.2rem;
+  }
+  
+  .hero-subheading {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+}
