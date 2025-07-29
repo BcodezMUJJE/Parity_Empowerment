@@ -1,61 +1,141 @@
 .app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   padding: 2rem;
-  font-family: Arial, sans-serif;
-  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
 }
 
 .cards-container {
   display: flex;
-  gap: 4.5rem;
-  flex-wrap: nowrap; /* Prevents wrapping to new line */
-  min-width: fit-content; /* Ensures container fits all cards */
+  gap: 2rem;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
-  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 1rem;
 }
 
 .cta-card {
-  flex: 0 0 300px; /* Don't grow or shrink, fixed width of 300px */
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  flex: 0 0 320px;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cta-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .cta-card h2 {
   color: #5a3d5b;
-  margin-top: 0;
-  font-size: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .cta-card p {
   color: #5a3d5b;
-  line-height: 1.6;
-  font-size: 0.9rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
 }
 
 .divider {
   height: 1px;
   background-color: rgba(90, 61, 91, 0.2);
-  margin: 1.2rem 0;
+  margin: 1.5rem 0;
 }
 
 .cta-button {
   background-color: #9b59b6;
   color: white;
   border: none;
-  padding: 0.7rem 1.3rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  padding: 1rem 1.8rem;
+  border-radius: 25px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
   width: 100%;
   font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .cta-button:hover {
   background-color: #8e44ad;
+  transform: scale(1.02);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .cards-container {
+    gap: 1.5rem;
+  }
+  .cta-card {
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards-container {
+    flex-wrap: wrap;
+  }
+  .cta-card {
+    flex: 0 0 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1.5rem;
+  }
+  .cta-card {
+    padding: 1.5rem;
+  }
+  .cta-card h2 {
+    font-size: 1.5rem;
+  }
+  .cta-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .cta-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+  .app {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .cta-card {
+    padding: 1.2rem;
+  }
+  .cta-card h2 {
+    font-size: 1.3rem;
+  }
+  .cta-button {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
 }
