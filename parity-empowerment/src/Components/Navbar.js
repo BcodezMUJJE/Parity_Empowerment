@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import './Navbar.css';
-import logo from '../Assets/Logo.png'; // Make sure this path is correct
+import logo from '../Assets/Logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,9 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo Section with Image */}
         <div className="navbar-brand">
-          <img src={logo} alt="Parity Empowerment Initiative Logo" className="logo-image" />
+          <Link to="/">
+            <img src={logo} alt="Parity Empowerment Initiative Logo" className="logo-image" />
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -24,14 +27,14 @@ const Navbar = () => {
           <span className={`bar ${isOpen ? 'open' : ''}`}></span>
         </button>
 
-        {/* Navigation Links */}
+        {/* Navigation Links - Using Link instead of a */}
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-          <a href="/" className="nav-link">Home</a>
-          <a href="/about" className="nav-link">About Us</a>
-          <a href="/programs" className="nav-link">Programs</a> {/* Fixed this line */}
-          <a href="/get-involved" className="nav-link">Get Involved</a>
-          <a href="/contact" className="nav-link">Contact</a>
-          <button className="donate-button">Donate</button>
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/about" className="nav-link">About Us</Link>
+          <Link to="/program" className="nav-link">Programs</Link>
+          <Link to="/get-involved" className="nav-link">Get Involved</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
+          <Link to="/donate" className="donate-button">Donate</Link>
         </div>
       </div>
     </nav>
