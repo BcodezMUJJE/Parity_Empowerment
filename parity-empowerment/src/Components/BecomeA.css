@@ -1,0 +1,61 @@
+.app {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+.cards-container {
+  display: flex;
+  gap: 4.5rem;
+  flex-wrap: nowrap; /* Prevents wrapping to new line */
+  min-width: fit-content; /* Ensures container fits all cards */
+  align-items: center;
+  margin: auto;
+}
+
+.cta-card {
+  flex: 0 0 300px; /* Don't grow or shrink, fixed width of 300px */
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cta-card:hover {
+  transform: translateY(-5px);
+}
+
+.cta-card h2 {
+  color: #5a3d5b;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.cta-card p {
+  color: #5a3d5b;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.divider {
+  height: 1px;
+  background-color: rgba(90, 61, 91, 0.2);
+  margin: 1.2rem 0;
+}
+
+.cta-button {
+  background-color: #9b59b6;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #8e44ad;
+}
