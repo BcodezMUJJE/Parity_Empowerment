@@ -8,6 +8,7 @@ import BecomeA from './Components/BecomeA';
 import AboutPage from './Components/AboutPage';
 import Donate from './Components/Donate';
 import Programs from './Components/Programs';
+import GetInvolved from './Components/GetInvolved';
 // Import other components for Programs, GetInvolved, Contact if they exist
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/program" element={<Programs />} /> 
-          {/* <Route path="/get-involved" element={<GetInvolved />} /> */}
+          <Route path="/get-involved" element={<GetInvolved />} />
           {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
         

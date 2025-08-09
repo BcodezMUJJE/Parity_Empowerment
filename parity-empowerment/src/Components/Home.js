@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import heroImage from '../Assets/HHHH.jpeg'; // Make sure this path is correct
+import heroImage from '../Assets/pat.jpeg'; // Make sure this path is correct
 import AboutUs from './AboutUs';
 
 

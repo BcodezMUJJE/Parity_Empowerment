@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
-import aboutImage from '../Assets/HHHH.jpeg'; // Replace with your actual image
+import aboutImage from '../Assets/mama1.jpg'; // Replace with your actual image
 
 const AboutUs = () => {
   return (

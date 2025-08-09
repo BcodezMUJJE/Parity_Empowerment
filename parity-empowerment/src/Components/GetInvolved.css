@@ -1,0 +1,577 @@
+/* Base Styles */
+.get-involved-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.involved-header {
+  background: linear-gradient(135deg, #2c3e50, #4a6491);
+  color: white;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Tabs Navigation */
+.involvement-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #495057;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: #e9ecef;
+}
+
+.tab-btn.active {
+  background-color: #4a6491;
+  color: white;
+}
+
+/* Tab Content */
+.tab-content {
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Volunteer Section */
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.content-left h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.opportunity-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.opportunity-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.opportunity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.opportunity-card h3 {
+  color: #4a6491;
+  margin-bottom: 0.5rem;
+}
+
+.opportunity-card span {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Forms */
+.form-right {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-right h3 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 120px;
+}
+
+.submit-btn {
+  background-color: #4a6491;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #3a5379;
+}
+
+/* Partner Section */
+.partner-types {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.partner-type {
+  border-left: 4px solid #4a6491;
+  padding-left: 1.5rem;
+}
+
+.partner-type h3 {
+  color: #2c3e50;
+}
+
+.partner-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cta-btn {
+  background-color: #4a6491;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.cta-btn:hover {
+  background-color: #3a5379;
+}
+
+/* Donate Section */
+.donate-intro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.donation-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.donation-option {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.donation-option.highlighted {
+  border: 2px solid #4a6491;
+  background-color: #f8f9fa;
+}
+
+.donation-option h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.amount-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.amount-buttons button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.amount-buttons button:hover {
+  background-color: #e9ecef;
+}
+
+.benefit-note {
+  font-size: 0.9rem;
+  color: #4a6491;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.donation-impact {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.impact-stat {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.impact-stat span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a6491;
+  margin-bottom: 0.5rem;
+}
+
+/* Careers Section */
+.job-listings {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.job-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.job-card h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.job-card p {
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.view-details-btn {
+  background-color: white;
+  color: #4a6491;
+  border: 1px solid #4a6491;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-details-btn:hover {
+  background-color: #4a6491;
+  color: white;
+}
+
+.talent-network {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.network-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.network-form input {
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  min-width: 250px;
+}
+
+.network-form button {
+  background-color: #4a6491;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.network-form button:hover {
+  background-color: #3a5379;
+}
+
+/* Footer */
+.involved-footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.involved-footer a {
+  color: #a8c6f8;
+  text-decoration: none;
+}
+
+.involved-footer a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: white;
+  background-color: #4a6491;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #3a5379;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+  .section-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .opportunity-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .partner-types {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .donation-options {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .impact-stats {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .job-listings {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-content h1 {
+    font-size: 3rem;
+  }
+  
+  .content-left h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Tablets (landscape) and small laptops */
+@media (min-width: 768px) {
+  .involved-header {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .section-grid {
+    flex-direction: row;
+  }
+  
+  .content-left {
+    flex: 1;
+  }
+  
+  .form-right {
+    flex: 1;
+    margin-top: 0;
+  }
+  
+  .partner-types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .donation-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .impact-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large tablets and small desktops */
+@media (min-width: 900px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .tab-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .opportunity-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Standard laptops and desktops */
+@media (min-width: 1024px) {
+  .involved-header {
+    padding: 3rem 2rem;
+  }
+  
+  .header-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .tab-content h2 {
+    font-size: 2rem;
+  }
+  
+  .partner-types {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+  .header-content h1 {
+    font-size: 3rem;
+  }
+  
+  .header-content p {
+    font-size: 1.2rem;
+  }
+  
+  .tab-content {
+    padding: 2.5rem;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1440px) {
+  .get-involved-container {
+    font-size: 1.05rem;
+  }
+  
+  .tab-btn {
+    padding: 0.8rem 1.5rem;
+  font-size: 1.05rem;
+  }
+  
+  .form-group input,
+  .form-group select {
+    height: 3rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .involvement-tabs,
+  .social-links {
+    display: none;
+  }
+  
+  .tab-content > section {
+    display: block !important;
+    page-break-inside: avoid;
+  }
+}
+
+/* Media Query to restrict to 480px-500px */
+@media (min-width: 480px) and (max-width: 500px) {
+  /* All styles above apply only in this range */
+}
+
+/* Hide outside the target range */
+@media (max-width: 479px), (min-width: 501px) {
+  .get-involved-container {
+    display: none;
+  }
+  body::after {
+    content: "This design is optimized for 480px-500px screens only";
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: red;
+  }
+}
